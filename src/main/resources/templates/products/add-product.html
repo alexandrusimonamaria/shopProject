@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add new product</title>
+</head>
+<body>
+<h1>New product</h1>
+<form action="#" th:action="@{/products/add-product}" th:object="${newProduct}" method="post">
+<!--    <table class="table table-bordered">-->
+<!--        <thead class="thead-light">-->
+<!--        <tr>-->
+<!--            <td> Product Name</td>-->
+<!--            <td> Product Price</td>-->
+<!--            <td> Product description</td>-->
+<!--            <td> Product stock</td>-->
+<!--            <td> Discount product</td>-->
+<!--        </tr>-->
+<!--        </thead>-->
+<!--        <tbody>-->
+<!--        <tr th:each="product : ${products}">-->
+<!--            <td th:text="${{product.getProductName()}}"></td>-->
+<!--            <td th:text="${{product.getProductPrice()}}"></td>-->
+<!--            <td th:text="${{product.getProductDescription()}}"></td>-->
+<!--            <td th:text="${{product.getProductStock()}}"></td>-->
+<!--            <td th:text="${{product.getDiscountProduct()}}"></td>-->
+<!--        </tr>-->
+<!--        </tbody>-->
+<!--    </table>-->
+
+    <div class="text-right"><br>
+        <button type="submit" class="btn btn-primary">Save</button>
+    </div>
+</form>
+</body>
+</html>

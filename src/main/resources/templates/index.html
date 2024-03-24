@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div th:fragment="navigation-top">
+    <nav class="navbar navbar-extend-lg navbar-dark bg-dark static-top">
+        <div class="container">
+            <a class="navbar-brand"> Market </a>
+            <div class="collapse navbar-collapse flex-column" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link">Home <span class="sr-only"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Administration<span class="sr-only"></span></a>
+                    </li>
+                </ul>
+            </div>
+
+            <a class="navbar-brand"> User </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="justify-content-center">
+                <a href="#" class="btn btn-danger">Logout</a>
+            </div>
+        </div>
+    </nav>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+<body>
+
+<h1>List of products</h1>
+<table class="table table-bordered">
+    <thead class="thead-light">
+    <tr>
+        <td> Product Number</td>
+        <td> Product Name</td>
+        <td> Product Price</td>
+        <td> Product description</td>
+        <td> Product stock</td>
+        <td> Discount product</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="product : ${products}">
+        <td th:text="${{product.getId()}}"></td>
+        <td th:text="${{product.getProductName()}}"></td>
+        <td th:text="${{product.getProductPrice()}}"></td>
+        <td th:text="${{product.getProductDescription()}}"></td>
+        <td th:text="${{product.getProductStock()}}"></td>
+        <td th:text="${{product.getDiscountProduct()}}"></td>
+    </tr>
+    </tbody>
+</table>
+
+<br/>
+
+<div class="btn-toolbar float-right" role="toolbar" >
+    <div class="btn-group" role="group">
+        <a href="#" class="btn btn-primary"
+           th:href="@{/products/open-add-page}">Add</a>
+    </div>
+</div>
+<br>
+<!--<form th:action="@{/search}" method="get">-->
+<!--    <input type="text" name="query" placeholder="Search...">-->
+<!--    <button type="submit">Search</button>-->
+<!--</form>-->
+
+<!--<form action="#" th:action="@{/product/add-product}" th:object="${newProduct}" method="post">-->
+<!--    <div class="form-row">-->
+<!--        <label for="productName">Product Name: </label><br>-->
+<!--        <input type="text" id="productName" th:field="*{productName}"><br>-->
+
+<!--        <label for="productPrice">Product Price: </label><br>-->
+<!--        <input type="text" id="productPrice" th:field="*{productPrice}"><br>-->
+
+<!--        <label for="productDescription">Product Description: </label><br>-->
+<!--        <input type="text" id="productDescription" th:field="*{productDescription}"><br>-->
+<!--    </div>-->
+
+<!--    <div><br>-->
+<!--        <button type="submit" class="btn btn-primary">Adaugare produs</button>-->
+<!--    </div>-->
+<!--</form>-->
+
+</body>
+</html>
