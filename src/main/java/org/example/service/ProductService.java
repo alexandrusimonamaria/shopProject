@@ -7,7 +7,10 @@ import org.example.model.Product;
 import org.springframework.stereotype.Service;
 import org.example.repository.ProductRepository;
 
+<<<<<<< HEAD
 import java.util.ArrayList;
+=======
+>>>>>>> 80521185f4deca86ce82f3e92497b67390b750be
 import java.util.List;;
 
 @Service
@@ -15,7 +18,10 @@ public class ProductService {
     private final ProductRepository productsRepository;
     private final ProductMapper productMapper;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 80521185f4deca86ce82f3e92497b67390b750be
     public ProductService(ProductRepository productsRepository, ProductMapper productMapper) {
         this.productsRepository = productsRepository;
         this.productMapper = productMapper;

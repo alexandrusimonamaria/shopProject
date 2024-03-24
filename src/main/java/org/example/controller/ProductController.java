@@ -2,6 +2,7 @@ package org.example.controller;
 
 import jakarta.validation.Valid;
 import org.springframework.ui.Model;
+
 import org.example.dto.ProductDto;
 import org.example.mapper.ProductMapper;
 import org.example.model.Product;
@@ -13,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/products")
+
 public class ProductController {
     private final ProductService productService;
     private final ProductMapper productMapper;
@@ -39,6 +41,7 @@ public class ProductController {
 //        model.addAttribute("query", query);
 //        return "search-results";
 //    }
+
 
     @PostMapping
     public ProductDto saveProduct(@RequestBody ProductDto productDto) {

@@ -7,8 +7,11 @@ import lombok.Getter;
 import lombok.Setter;
 
 import java.io.Serializable;
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
+=======
+>>>>>>> 80521185f4deca86ce82f3e92497b67390b750be
 
 @Getter
 @Setter
@@ -25,5 +28,8 @@ public class ProductDto implements Serializable {
     private StockDto productStock;
     private DiscountDto discountProduct;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 80521185f4deca86ce82f3e92497b67390b750be
 }
